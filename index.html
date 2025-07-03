@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Potato Weather</title>
+  <link href="style.css" rel="stylesheet">
+  <script type="module" src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="user-input-area">
+      <form id="form-data">
+        <label for="city">Enter City Name</label>
+        <input type="text" name="city" placeholder="Enter your city">
+        <label for="state">Enter State Name</label>
+        <input type="text" name="state" placeholder="Enter you state">
+        <label for="days">Pick Forcast distance</label>
+        <select name="days">
+          <option value="1">1 Day</option>
+          <option value="2">2 Days</option>
+          <option value="3">3 Days</option>
+          <option value="4">4 Days</option>
+          <option value="5">5 Days</option>
+          <option value="6">6 Days</option>
+          <option value="7">7 Days</option>
+        </select>
+        <span class="button-box">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </span>
+      </form>
+
+    </div>
+    <div id="weather-box">
+      <div class="inner-content">
+
+        <span id="date">date</span>
+        <div id="weather-icon">
+          icon
+        </div>
+        <div class="temps">
+          <span id="temp">temps</span>
+          <span id="real-feel">realfeel</span>
+        </div>
+        <div id="condition">
+          condition
+        </div>
+        <div id="description">
+          description
+
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
